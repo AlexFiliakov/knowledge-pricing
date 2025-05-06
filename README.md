@@ -15,4 +15,4 @@ This repo includes the supporting notebooks for my series of blog posts explorin
      - Exploring risk transfer strategies for our hypothetical insurer of knowledge assets.
 4. asdf
    - This supports the upcoming post: **When Truth Decays Part 4: Ontological Schrödinger's Cats**
-     - Modeling, pricing, and reinsuring the rare tremors that shake the very foundations of what we believe to be true using quantum algorithms.
+     - Utilizing quantum algorithms to model, price, and reinsure the rare tremors that shake the very foundations of what we believe to be true.
