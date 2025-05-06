@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="18.6.1">
+  <process id="Process_1" isExecutable="false">
+    <task id="Activity_00biawk" name="Normal Science">
+      <incoming>Flow_0wvji98</incoming>
+      <outgoing>Flow_0d362mv</outgoing>
+    </task>
+    <task id="Activity_0fbzpg6" name="Model Adjustment">
+      <incoming>Flow_0d362mv</incoming>
+      <outgoing>Flow_19ik19q</outgoing>
+    </task>
+    <task id="Activity_1lfektk" name="Model Crisis">
+      <incoming>Flow_1fx2iib</incoming>
+      <outgoing>Flow_0vsmwdn</outgoing>
+    </task>
+    <task id="Activity_1rlbq7c" name="Model Revolution">
+      <incoming>Flow_0vsmwdn</incoming>
+      <outgoing>Flow_1slzgai</outgoing>
+    </task>
+    <task id="Activity_1yxxd9i" name="Paradigm Shift">
+      <incoming>Flow_1slzgai</incoming>
+      <outgoing>Flow_0wvji98</outgoing>
+    </task>
+    <task id="Activity_19qdfqo" name="Accumulation of Anomalies">
+      <incoming>Flow_19ik19q</incoming>
+      <outgoing>Flow_1fx2iib</outgoing>
+    </task>
+    <sequenceFlow id="Flow_0d362mv" sourceRef="Activity_00biawk" targetRef="Activity_0fbzpg6" />
+    <sequenceFlow id="Flow_19ik19q" sourceRef="Activity_0fbzpg6" targetRef="Activity_19qdfqo" />
+    <sequenceFlow id="Flow_1slzgai" sourceRef="Activity_1rlbq7c" targetRef="Activity_1yxxd9i" />
+    <sequenceFlow id="Flow_0wvji98" sourceRef="Activity_1yxxd9i" targetRef="Activity_00biawk" />
+    <sequenceFlow id="Flow_0vsmwdn" sourceRef="Activity_1lfektk" targetRef="Activity_1rlbq7c" />
+    <sequenceFlow id="Flow_1fx2iib" sourceRef="Activity_19qdfqo" targetRef="Activity_1lfektk" />
+  </process>
+  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
+    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="Activity_19qdfqo_di" bpmnElement="Activity_19qdfqo">
+        <omgdc:Bounds x="440" y="280" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0fbzpg6_di" bpmnElement="Activity_0fbzpg6">
+        <omgdc:Bounds x="440" y="150" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0jrc38d" bpmnElement="Activity_1rlbq7c">
+        <omgdc:Bounds x="160" y="280" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1yxxd9i_di" bpmnElement="Activity_1yxxd9i">
+        <omgdc:Bounds x="160" y="150" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_00biawk_di" bpmnElement="Activity_00biawk">
+        <omgdc:Bounds x="300" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1lfektk_di" bpmnElement="Activity_1lfektk">
+        <omgdc:Bounds x="300" y="350" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0d362mv_di" bpmnElement="Flow_0d362mv">
+        <omgdi:waypoint x="400" y="120" />
+        <omgdi:waypoint x="490" y="120" />
+        <omgdi:waypoint x="490" y="150" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_19ik19q_di" bpmnElement="Flow_19ik19q">
+        <omgdi:waypoint x="490" y="230" />
+        <omgdi:waypoint x="490" y="280" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1slzgai_di" bpmnElement="Flow_1slzgai">
+        <omgdi:waypoint x="210" y="280" />
+        <omgdi:waypoint x="210" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0wvji98_di" bpmnElement="Flow_0wvji98">
+        <omgdi:waypoint x="210" y="150" />
+        <omgdi:waypoint x="210" y="120" />
+        <omgdi:waypoint x="300" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0vsmwdn_di" bpmnElement="Flow_0vsmwdn">
+        <omgdi:waypoint x="300" y="390" />
+        <omgdi:waypoint x="210" y="390" />
+        <omgdi:waypoint x="210" y="360" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1fx2iib_di" bpmnElement="Flow_1fx2iib">
+        <omgdi:waypoint x="490" y="360" />
+        <omgdi:waypoint x="490" y="390" />
+        <omgdi:waypoint x="400" y="390" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
