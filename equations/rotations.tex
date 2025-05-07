@@ -1,0 +1,21 @@
+\documentclass[border=0pt,varwidth]{standalone}
+\usepackage{amsmath}
+\usepackage{braket}
+
+\begin{document}
+\vspace*{1em}
+\begin{gather*}
+\text{Quantum Subtractor:} \\
+\sum^{1_n-1}_{j=0}\sqrt{p_j}\ket{N-j-1_n}\ket{0}
+[\cos(\frac{\pi}{4})\ket{0}+\sin(\frac{\pi}{4})\ket{1}] \\
++\sum^{N-1}_{j=1_n}\sqrt{p_j}\ket{j-1_n}\ket{1}
+[\cos(\frac{\pi}{4})\ket{0}+\sin(\frac{\pi}{4})\ket{1}] \\\\
+\text{Apply CCRY gates:} \\
+\sum^{1_n-1}_{x=0}\sqrt{p_x}\ket{N-x-1_n}\ket{0}
+(\cos\frac{\pi}{4}\ket{0}+\sin\frac{\pi}{4}\ket{1}) \\
++\sum^{N-1}_{x=1_n}\sqrt{p_x}\ket{x-1_n}\ket{1}\otimes
+(\cos\theta\ket{0}+\sin\theta\ket{1}) \\
+\text{Where }\theta=\frac{\pi}{4}+0.4c(x-1_n)\text{ and }c\text{ is a small number.}
+\end{gather*}
+\vspace*{1em}
+\end{document}
